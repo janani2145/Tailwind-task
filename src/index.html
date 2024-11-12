@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Project</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class=" ">
+    <div class=" container bg-green-200 mx-auto px-4 py-2">
+        <!-- Navbar -->
+<nav class="flex justify-between items-center"> 
+    <div class="h-16 w-16">
+        
+    <a href="#"><img class="rounded-full"  src="https://picsum.photos/200"></a>
+</div>
+    <ul class="hidden md:flex space-x-6">
+        <li ><a class="text-black hover:text-white font-medium" href="#">Services</a></li>
+        <li><a class="text-black hover:text-white font-medium" href="#">Pricing</a></li>
+        <li><a  class="text-black hover:text-white font-medium" href="#">About</a></li>
+        <li><a  class="text-black hover:text-white font-medium" href="#">Contact</a></li>
+    </ul>
+    <button class="hidden md:block bg-green-500 px-6 py-2 rounded-full text-white hover:bg-blue-300 font-medium">Sign Up</button>
+    <button class="md:hidden mobile-icon"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 me-2" viewBox="0 0 24 24" fill="none">
+        <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></button>
+  </nav>
+</div>
+<!-- Mobile Nav -->
+ <div class="md:hidden mobile-menu">
+<ul class=" flex flex-col items-center space-y-6">
+    <li ><a class="text-black hover:text-white font-medium" href="#">Services</a></li>
+    <li><a class="text-black hover:text-white font-medium" href="#">Pricing</a></li>
+    <li><a  class="text-black hover:text-white font-medium" href="#">About</a></li>
+    <li><a  class="text-black hover:text-white font-medium" href="#">Contact</a></li>
+    <li> <button class=" bg-green-500 px-6 py-2 rounded-full text-white hover:bg-blue-300 font-medium">Sign Up</button></li>
+</ul>
+</div>
+<!-- hero section -->
+<div class="container mx-auto mt-12 p-4 md:p-8 flex flex-col md:flex-row">
+    <div class="md:w-1/2 flex items-center justify-center text-center mx-auto">
+        <div>
+            <p class="max-w-lg mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, vero! Modi doloremque quidem repudiandae id sint. Omnis quia ducimus accusantium dolor possimus architecto quasi dignissimos dolorum minima. Voluptatibus, neque exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis voluptatibus? Modi adipisci laudantium cumque, repudiandae quae nobis neque vero dolore earum incidunt optio.</p>
+            <button class="bg-indigo-700 text-white px-6 py-2 rounded-full mt-6 font-medium hover:bg-indigo-600">Get Started</button>
+        </div>
+    </div>
+    <div class="md:w-1/2 mx-auto">
+        <img class="mx-auto w-full" src="./assets/hero.png" alt="Hero image">
+    </div>
+</div>
+
+<!-- Main section -->
+ <div class="container mx-auto flex mt-12 flex-col gap-12 md:flex-row">
+    <div class=" mx-auto md:w-1/3 text-center flex flex-col items-center ">
+        <h1 class="text-2xl">Web development</h1>
+        <img  class="h-40 w-40" src="assets/web.svg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta quidem aspernatur incidunt praesentium. Reprehenderit, voluptate? Perspiciatis, magni laudantium molestias similique repellat</p>
+    </div>
+    <div class=" mx-auto md:w-1/3  text-center flex flex-col items-center">
+        <h1 class="text-2xl">Mobile development</h1>
+        <img class="h-40 w-40" src="assets/mobile.svg">
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+    <div class=" mx-auto md:w-1/3  text-center flex flex-col items-center">
+        <h1 class="text-2xl">Design</h1>
+        <img class="h-40 w-40" src="assets/designer.svg">
+        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+    </div>
+ </div>
+ <div class="relative mt-16 mx-8 max-w-sm md:max-w-xl lg:max-w-4xl xl:max-w-7xl md:mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-50 p-8">
+    <!-- Carousel Slides -->
+    <div id="carouselSlides" class="flex transition-transform duration-500 gap-5">
+      <img src="https://picsum.photos/800/400?random=1" alt="Image 1" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=2" alt="Image 2" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=3" alt="Image 3" class="w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=4" alt="Image 4" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=5" alt="Image 5" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=6" alt="Image 6" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=7" alt="Image 7" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=8" alt="Image 8" class=" w-40 h-40 md:h-60 md:w-60  flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=1" alt="Image 1" class="w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=2" alt="Image 2" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=3" alt="Image 3" class="w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=4" alt="Image 4" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=5" alt="Image 5" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=6" alt="Image 6" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=7" alt="Image 7" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+      <img src="https://picsum.photos/800/400?random=8" alt="Image 8" class=" w-40 h-40 md:h-60 md:w-60 flex-shrink-0 rounded-2xl">
+    </div>
+  
+    <!-- Previous Button -->
+    <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white text-2xl px-4 py-2 hover:bg-opacity-75">
+      &#10094;
+    </button>
+  
+    <!-- Next Button -->
+    <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white text-2xl px-4 py-2 hover:bg-opacity-75">
+      &#10095;
+    </button>
+  
+    <!-- Indicators -->
+    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+      <span class="carousel-indicator w-3 h-3 rounded-full bg-gray-400 cursor-pointer" data-slide="0"></span>
+      <span class="carousel-indicator w-3 h-3 rounded-full bg-gray-400 cursor-pointer" data-slide="1"></span>
+      <span class="carousel-indicator w-3 h-3 rounded-full bg-gray-400 cursor-pointer" data-slide="2"></span>
+      <span class="carousel-indicator w-3 h-3 rounded-full bg-gray-400 cursor-pointer" data-slide="3"></span>
+    </div>
+  </div>
+  
+  <!-- JavaScript for Carousel -->
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('#carouselSlides img');
+    const totalSlides = slides.length;
+  
+    const updateCarousel = () => {
+      document.getElementById('carouselSlides').style.transform = `translateX(-${currentIndex * 25}%)`; // 25% because we're showing 4 images at once
+      document.querySelectorAll('.carousel-indicator').forEach((dot, index) => {
+        dot.classList.toggle('bg-gray-800', index === currentIndex);
+        dot.classList.toggle('bg-gray-400', index !== currentIndex);
+      });
+    };
+  
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % (totalSlides / 4); // Increment by 1 group of 4 images
+      updateCarousel();
+    });
+  
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides / 4) % (totalSlides / 4); // Decrement by 1 group of 4 images
+      updateCarousel();
+    });
+  
+    document.querySelectorAll('.carousel-indicator').forEach((dot) => {
+      dot.addEventListener('click', () => {
+        currentIndex = parseInt(dot.getAttribute('data-slide'));
+        updateCarousel();
+      });
+    });
+  
+    // Auto-slide every 5 seconds
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % (totalSlides / 4);
+      updateCarousel();
+    }, 5000);
+  </script>
+  
+ <!-- Pricing Section -->
+  <div class="container mx-auto mt-16 ">
+    <div class="text-center  mb-8">
+<h1 class="font-bold text-3xl text-green-500 mb-8">Pricing</h1>
+<p class="text-2xl">Offers multiple packages for Monthy and Yearly</p>
+<p class="text-2xl">Featured plans are here</p>
+    </div>
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-4 mt-4">
+        <div class="bg-gray-200 md:w-60 lg:w-80 mx-auto rounded-2xl hover:shadow-2xl text-center mt-4 p-6 relative">
+            <h1 class="font-bold text-5xl">$99</h1>
+            <h2 class="text-green-500 mb-3 font-bold">Basic</h2>
+            <p>All the basic features are included</p>
+            <ul class="space-y-4 mt-6 mb-8">
+                
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2 ">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2 ">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
+                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                            <path  fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        
+                    </div>
+                    <div>Customized Features</div>
+                </li>
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
+                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                            <path  fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        
+                    </div>
+                    <div>Dual Infrastructure</div>
+                </li>
+            
+              
+            </ul>
+            <button class="bg-indigo-700 text-white px-6 py-2 md:px-3  lg:px-6 rounded-full mt-6 font-medium absolute bottom-0 transform translate-y-5 -translate-x-16">Get Started</button> </div>
+
+        <div class="bg-gray-200 md:w-74 lg:w-80 mx-auto rounded-2xl hover:shadow-2xl text-center border-4 border-indigo-500 border-dashed relative p-6  mt-5 md:mt-0 ">
+            <h1 class="font-bold text-5xl">$149</h1>
+            <h2 class="text-green-500 mb-3 font-bold">Advanced</h2>
+            <p>All the basic features are included</p>
+            <ul class="space-y-4 mt-6 mb-8">
+                
+                <li class="flex items-center space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center space-x-2 ">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2 ">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
+                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                            <path  fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        
+                    </div>
+                    <div>Customized Features</div>
+                </li>
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
+                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                            <path  fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        
+                    </div>
+                    <div>Dual Infrastructure</div>
+                </li>
+            
+              
+            </ul>
+            <button class="bg-indigo-700 text-white px-6 md:px-3 lg:px-6 py-2 rounded-full mt-6 font-medium absolute bottom-0 transform translate-y-5 -translate-x-16">Get Started</button> 
+            
+            </div>
+        <div class="bg-gray-200 md:w-60 lg:w-80 mx-auto rounded-2xl hover:shadow-2xl text-center mt-4 relative p-6">
+            <h1 class="font-bold text-5xl">$199</h1>
+            <h2 class="text-green-500 mb-3 font-bold">Business</h2>
+            <p>All the basic features are included</p>
+            <ul class="space-y-4 mt-6 mb-8">
+                
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2 ">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2 ">
+                    <div>
+                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                            </svg>
+                    </div>
+                    <div>Core business System</div>
+                </li>
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
+                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                            <path  fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        
+                    </div>
+                    <div>Customized Features</div>
+                </li>
+                <li class="flex items-center  space-x-2">
+                    <div>
+                        <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
+                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                            <path  fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        
+                    </div>
+                    <div>Dual Infrastructure</div>
+                </li>
+            
+              
+            </ul>
+            <button class="bg-indigo-700 text-white px-6 py-2 md:px-3 lg:px-6 rounded-full mt-6 font-medium absolute bottom-0 transform translate-y-5 -translate-x-16">Get Started</button> 
+        </div>
+        
+
+    </div>
+  </div>
+  <!-- stories Section -->
+   <div class="container mx-auto mt-16">
+    <div class="text-center">
+        <h1 class=" text-3xl font-semibold" >Recent Updates</h1>
+        <h1 class=" mb-10 text-2xl">Featured Stories</h1>
+    </div>
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto">
+        <div class="mx-auto pb-5 w-72 md:w-60 lg:w-80 bg-gray-200 rounded-2xl text-center hover:shadow-2xl">
+            <img class="rounded-t-2xl w-full h-60" src="https://picsum.photos/200" alt="Sample Image">
+            <h1 class="text-2xl text-indigo-500 mt-4">Google Rankings</h1>
+            <p class="font-thin mt-4">Make it connect with every client worldwide</p>
+            <a href="#" class="font-bold text-indigo-500 hover:text-black">Read More</a>
+        </div>
+        
+        <div class="mx-auto pb-5  w-72 md:w-60 lg:w-80 bg-gray-200 rounded-2xl text-center hover:shadow-2xl">
+            <img class="rounded-t-2xl w-full h-60"  src="https://picsum.photos/200">
+            <h1 class="text-2xl text-indigo-500 mt-4">Communications</h1>
+            <p class="font-thin mt-4">Best Communication for the business</p>
+            <a href="#" class="font-bold text-indigo-500 hover:text-black">Read More</a>
+        </div>
+        <div class="mx-auto pb-5  w-72 md:w-60 lg:w-80 bg-gray-200 rounded-2xl text-center hover:shadow-2xl">
+            <img class="rounded-t-2xl w-full h-60"  src="https://picsum.photos/200">
+            <h1 class="text-2xl text-indigo-500 mt-4">Remote Working</h1>
+            <p class="font-thin mt-4">Remote connectivity for Consistent</p>
+            <a href="#" class="font-bold text-indigo-500 hover:text-black">Read More</a>
+        </div>
+    </div>
+   </div>
+  <!-- COntact us -->
+  <div class="mx-auto mt-14">
+    <h2 class="text-3xl font-semibold text-center mt-16"> Contact Our Team</h2>
+    <h3 class="text-xl text-center mt-2 mb-10">Send us a message, and we’ll get back to you soon.</h3>
+
+    <div class="container flex flex-col md:flex-row mx-auto items-center p-8 gap-5">
+    <div class="mx-auto w-full lg:w-1/2">
+        <img class="mx-auto" src="./assets/undraw_contact_us_re_4qqt.svg">
+    </div>
+    <div class="flex flex-col text-center md:text-start mx-auto lg:pr-14">
+    <form class=" mt-12 md:mt-0 p-8 md:p-12 lg:p-16  bg-white shadow-xl rounded-lg ">
+        <h2 class="text-3xl text-center mb-6">Let's Chat</h2>
+        <div class="mb-6">
+        <input class="px-4 py-2  border  rounded-lg text-gray-700 w-full bg-gray-100  focus:ring-2 focus:sky-blue-500  focus:outline-none md:w-64 lg:w-96" type="text" name="name" placeholder="Name">
+        </div>
+    <div class="mb-6">
+
+     
+        <input class=" px-4  py-2 border rounded-lg focus:ring-2 focus:sky-blue-500  bg-gray-100 focus:outline-none text-gray-700 w-full md:w-64 lg:w-96" type="email" name="email" placeholder="Email">
+    </div>
+ <div class="mb-6">
+
+        <textarea class=" px-4 py-2 border rounded-lg focus:ring-2 focus:sky-blue-500  bg-gray-100 focus:outline-none text-gray-700 w-full md:w-64 lg:w-96" placeholder="Message"></textarea>
+ </div>
+        <div class="">
+        <button class="bg-indigo-700 px-6 py-2 rounded-full hover:bg-indigo-500  text-white">Send Message</button>
+    </div>
+
+    </form>
+</div>
+</div>
+  </div>
+   <!-- Footer Section -->
+    <footer class="bg-black text-white mt-16">
+        <div class="container mx-auto flex flex-col justify-center items-center md:flex-row gap-12 py-10 md:px-10 lg:px-16 xl:px-32">
+            <!-- Logo Section (25%) -->
+            <div class="md:w-1/4">
+                <h2 class="font-bold text-2xl">JVL Code</h2>
+            </div>
+    
+            <!-- Link Sections (50%) -->
+            <div class="md:w-1/2 flex flex-col md:flex-row">
+                <div class="md:pr-5 lg:pr-10 xl:pr-24">
+                    <h2 class="text-2xl lg:text-2xl md:text-xl font-bold">Company</h2>
+                    <ul class="space-y-2 mt-4">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="md:pr-5 lg:pr-10 xl:pr-24 mt-5 md:mt-0">
+                    <h2 class="  text-2xl lg:text-2xl md:text-xl font-bold">Products</h2>
+                    <ul class="space-y-2 mt-4">
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                    </ul>
+                </div>
+                <div class="mt-5 md:mt-0">
+                    <h2 class="text-2xl lg:text-2xl md:text-xl font-bold">Resources</h2>
+                    <ul class="space-y-2 mt-4">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Social Media Section (25%) -->
+            <div class="md:w-1/4 flex gap-5 lg:justify-end md:gap-4">
+                <button aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 bg-slate-50 rounded" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0F0F0F"/>
+                        </svg>
+                </button>
+                <button aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10  bg-slate-50 rounded" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7828 3.91825C20.1313 3.83565 20.3743 3.75444 20.5734 3.66915C20.8524 3.54961 21.0837 3.40641 21.4492 3.16524C21.7563 2.96255 22.1499 2.9449 22.4739 3.11928C22.7979 3.29366 23 3.6319 23 3.99986C23 5.08079 22.8653 5.96673 22.5535 6.7464C22.2911 7.40221 21.9225 7.93487 21.4816 8.41968C21.2954 11.7828 20.3219 14.4239 18.8336 16.4248C17.291 18.4987 15.2386 19.8268 13.0751 20.5706C10.9179 21.3121 8.63863 21.4778 6.5967 21.2267C4.56816 20.9773 2.69304 20.3057 1.38605 19.2892C1.02813 19.0108 0.902313 18.5264 1.07951 18.109C1.25671 17.6916 1.69256 17.4457 2.14144 17.5099C3.42741 17.6936 4.6653 17.4012 5.6832 16.9832C5.48282 16.8742 5.29389 16.7562 5.11828 16.6346C4.19075 15.9925 3.4424 15.1208 3.10557 14.4471C2.96618 14.1684 2.96474 13.8405 3.10168 13.5606C3.17232 13.4161 3.27562 13.293 3.40104 13.1991C2.04677 12.0814 1.49999 10.5355 1.49999 9.49986C1.49999 9.19192 1.64187 8.90115 1.88459 8.71165C1.98665 8.63197 2.10175 8.57392 2.22308 8.53896C2.12174 8.24222 2.0431 7.94241 1.98316 7.65216C1.71739 6.3653 1.74098 4.91284 2.02985 3.75733C2.1287 3.36191 2.45764 3.06606 2.86129 3.00952C3.26493 2.95299 3.6625 3.14709 3.86618 3.50014C4.94369 5.36782 6.93116 6.50943 8.78086 7.18568C9.6505 7.50362 10.4559 7.70622 11.0596 7.83078C11.1899 6.61019 11.5307 5.6036 12.0538 4.80411C12.7439 3.74932 13.7064 3.12525 14.74 2.84698C16.5227 2.36708 18.5008 2.91382 19.7828 3.91825ZM10.7484 9.80845C10.0633 9.67087 9.12171 9.43976 8.09412 9.06408C6.7369 8.56789 5.16088 7.79418 3.84072 6.59571C3.86435 6.81625 3.89789 7.03492 3.94183 7.24766C4.16308 8.31899 4.5742 8.91899 4.94721 9.10549C5.40342 9.3336 5.61484 9.8685 5.43787 10.3469C5.19827 10.9946 4.56809 11.0477 3.99551 10.9046C4.45603 11.595 5.28377 12.2834 6.66439 12.5135C7.14057 12.5929 7.49208 13.0011 7.49986 13.4838C7.50765 13.9665 7.16949 14.3858 6.69611 14.4805L5.82565 14.6546C5.95881 14.7703 6.103 14.8838 6.2567 14.9902C6.95362 15.4727 7.65336 15.6808 8.25746 15.5298C8.70991 15.4167 9.18047 15.6313 9.39163 16.0472C9.60278 16.463 9.49846 16.9696 9.14018 17.2681C8.49626 17.8041 7.74425 18.2342 6.99057 18.5911C6.63675 18.7587 6.24134 18.9241 5.8119 19.0697C6.14218 19.1402 6.48586 19.198 6.84078 19.2417C8.61136 19.4594 10.5821 19.3126 12.4249 18.6792C14.2614 18.0479 15.9589 16.9385 17.2289 15.2312C18.497 13.5262 19.382 11.1667 19.5007 7.96291C19.51 7.71067 19.6144 7.47129 19.7929 7.29281C20.2425 6.84316 20.6141 6.32777 20.7969 5.7143C20.477 5.81403 20.1168 5.90035 19.6878 5.98237C19.3623 6.04459 19.0272 5.94156 18.7929 5.70727C18.0284 4.94274 16.5164 4.43998 15.2599 4.77822C14.6686 4.93741 14.1311 5.28203 13.7274 5.89906C13.3153 6.52904 13 7.51045 13 8.9999C13 9.28288 12.8801 9.5526 12.6701 9.74221C12.1721 10.1917 11.334 9.92603 10.7484 9.80845Z" fill="#0F0F0F"/>
+                        </svg>
+                </button>
+                <button aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10  bg-slate-50 rounded" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>
+                        </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const mobileIcon = document.querySelector(".mobile-icon")
+        const mobileMenu = document.querySelector(".mobile-menu")
+        
+        mobileIcon.addEventListener('click',()=>{
+mobileMenu.classList.toggle('hidden')
+        })
+    </script>
+    
+</body>
+</html>
